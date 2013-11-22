@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Health Application</string>
+    <string name="weightFileName">weight_log.csv</string>
+    <string name="seriously_underweight">Seriously Underweight</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal_weight">Normal</string>
+    <string name="overweight">Overweight</string>
+    <string name="seriously_overweight">Seriously Overweight</string>
+    <string name="gravely_overweight">Gravely overweight</string><string name="turnOn">Turn On</string><string name="turnOff">Turn Off</string>
+    <string name="weightLog">Weight Logger</string>
+</resources>

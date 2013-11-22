@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:onClick="toggleAlarm">
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm 1"
+                android:id="@+id/alarm1" android:layout_column="0"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Date-Time"
+                android:id="@+id/editText1" android:layout_column="1" android:onClick="dateOnClick"
+                android:focusable="false"/>
+        <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alarm 1"
+                android:id="@+id/toggleButton1" android:layout_column="2" android:checked="false"
+                android:textOff="@string/turnOn" android:textOn="@string/turnOff" android:onClick="toggleAlarm"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNotes1" android:layout_column="0" android:layout_span="3"
+                android:hint="Alarm Notes"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm 2"
+                android:id="@+id/alarm2" android:layout_column="0"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Date-Time"
+                android:id="@+id/editText2" android:layout_column="1" android:onClick="dateOnClick"
+                android:focusable="false"/>
+        <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alarm 2"
+                android:id="@+id/toggleButton2" android:layout_column="2" android:checked="false"
+                android:textOff="Turn On" android:textOn="Turn Off" android:onClick="toggleAlarm"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNotes2" android:layout_column="0" android:layout_span="3"
+                android:hint="Alarm Notes"/>
+    </TableRow>
+</TableLayout>

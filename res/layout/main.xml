@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World, My name is dave"
+            />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_launcher"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Mass Calculator"
+            android:id="@+id/textView" android:layout_gravity="center" android:textStyle="bold"
+            android:typeface="sans" android:textSize="30dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your height in inches"
+            android:id="@+id/textView1" android:layout_gravity="left|center_vertical"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightInput" android:inputType="numberDecimal" android:text="0"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Weight in Pounds"
+            android:id="@+id/textView2" android:layout_gravity="left|center_vertical"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightInput" android:inputType="numberDecimal" android:text="0"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate BMI"
+            android:id="@+id/btnCalcBMI" android:layout_gravity="center" android:onClick="calculateBMI"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/bmiOut" android:layout_gravity="center" android:textSize="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/bmiStatus" android:layout_gravity="center" android:textSize="30dp"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="144dp" android:layout_gravity="center" android:id="@+id/weightLocationGroup">
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="American"
+                android:id="@+id/rdoAmerican" android:checked="true"
+                android:onClick="radioButtonClicked"/>
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="World"
+                android:id="@+id/rdoWorld" android:checked="false"
+                android:onClick="radioButtonClicked"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight Logger"
+                android:id="@+id/btnWeightLogger" android:layout_gravity="center" android:onClick="switchToLogger"/>
+    </RadioGroup>
+
+</LinearLayout>
+
+</ScrollView>
