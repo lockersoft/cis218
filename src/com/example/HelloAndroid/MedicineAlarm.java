@@ -26,6 +26,7 @@ import java.util.Locale;
  */
 public class MedicineAlarm extends BaseActivity {
 
+  private Alarm currentAlarm;
   private ToggleButton toggleButton1;
   private EditText editNotes1;
   private EditText dateText1;
@@ -40,28 +41,28 @@ public class MedicineAlarm extends BaseActivity {
   Calendar c = Calendar.getInstance();
 
   @Override
-  protected void onCreate( Bundle savedInstanceState ){
+  protected void onCreate( Bundle savedInstanceState ) {
     super.onCreate( savedInstanceState );
-    setContentView(R.layout.alarmsettings);
+    setContentView( R.layout.alarmsettings );
     initializeApp();
   }
 
-  private void initializeApp(){
-    am = (AlarmManager)(this.getSystemService(Context.ALARM_SERVICE));
-    toggleButton1 = (ToggleButton)findViewById(R.id.toggleButton1);
-    editNotes1 = (EditText) findViewById(R.id.editNotes1);
-    dateText1 = (EditText) findViewById(R.id.editText1);
-    toggleButton2 = (ToggleButton)findViewById(R.id.toggleButton2);
-    editNotes2 = (EditText) findViewById(R.id.editNotes2);
-    dateText2 = (EditText) findViewById(R.id.editText2);
+  private void initializeApp() {
+    am = (AlarmManager)( this.getSystemService( Context.ALARM_SERVICE ) );
+    toggleButton1 = (ToggleButton)findViewById( R.id.toggleButton1 );
+    editNotes1 = (EditText)findViewById( R.id.editNotes1 );
+    dateText1 = (EditText)findViewById( R.id.editText1 );
+    toggleButton2 = (ToggleButton)findViewById( R.id.toggleButton2 );
+    editNotes2 = (EditText)findViewById( R.id.editNotes2 );
+    dateText2 = (EditText)findViewById( R.id.editText2 );
 
     // BROADCAST RECEIVER **********************************************
     br = new BroadcastReceiver() {
       @Override
-      public void onReceive(Context context, Intent intent) {
+      public void onReceive( Context context, Intent intent ) {
         String notes = "";
         Bundle extras = intent.getExtras();
-        if( extras != null ){
+        if( extras != null ) {
           notes = extras.getString( "notes" );
         }
         toastIt( "Wake UP: " + notes );
@@ -70,9 +71,9 @@ public class MedicineAlarm extends BaseActivity {
       }
     };
     // Register the receiver and create the intents for passing information
-    registerReceiver( br, new IntentFilter( "com.example.FirstAndroid"));
+    registerReceiver( br, new IntentFilter( "com.example.FirstAndroid" ) );
 
- //   setCurrentDateOnView();
+    //   setCurrentDateOnView();
 
     // Create all of my Alarm Objects
 //    for(int i=0;i<2;i++){
@@ -90,34 +91,34 @@ public class MedicineAlarm extends BaseActivity {
     toggleButton2.setTag( alarms[1] );
   }
 
-  public void toggleAlarm( View v ){
+  public void toggleAlarm( View v ) {
 //    String notesText =  ((EditText)v.getTag()).getText().toString();
 
-    if( v.getId() == toggleButton1.getId()){
-      if( toggleButton1.isChecked() ){
+    if( v.getId() == toggleButton1.getId() ) {
+      if( toggleButton1.isChecked() ) {
         alarms[0].setNotes( editNotes1.getText().toString() );
-        am.set( AlarmManager.RTC, c.getTimeInMillis(), alarms[0].pi);
-        toastIt( "Alarm On: " + alarms[0]);
+        am.set( AlarmManager.RTC, c.getTimeInMillis(), alarms[0].pi );
+        toastIt( "Alarm On: " + alarms[0] );
 
       } else {
-        toastIt( "Alarm Off: " + editNotes1.getText().toString());
+        toastIt( "Alarm Off: " + editNotes1.getText().toString() );
       }
-    } else if( v.getId() == toggleButton2.getId()){
-      if( toggleButton2.isChecked() ){
+    } else if( v.getId() == toggleButton2.getId() ) {
+      if( toggleButton2.isChecked() ) {
         alarms[1].setNotes( editNotes2.getText().toString() );
-        am.set( AlarmManager.RTC, c.getTimeInMillis(), alarms[1].pi);
-        toastIt( "Alarm On: " + alarms[1]);
+        am.set( AlarmManager.RTC, c.getTimeInMillis(), alarms[1].pi );
+        toastIt( "Alarm On: " + alarms[1] );
 
       } else {
-        toastIt( "Alarm Off: " + editNotes1.getText().toString());
+        toastIt( "Alarm Off: " + editNotes1.getText().toString() );
       }
     }
   }
 
-  DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener(){
+  DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
     @Override
-  public void onDateSet( DatePicker view, int year, int monthOfYear, int dayOfMonth ){
-      Alarm am = (Alarm)view.getTag();
+    public void onDateSet( DatePicker view, int year, int monthOfYear, int dayOfMonth ) {
+      Alarm am = (Alarm)currentAlarm;
       int month, day, hours, minutes;
       year = am.cal.get( Calendar.YEAR );
       month = am.cal.get( Calendar.MONTH );
@@ -129,15 +130,14 @@ public class MedicineAlarm extends BaseActivity {
       am.cal.set( Calendar.MONTH, monthOfYear );
       am.cal.set( Calendar.DAY_OF_MONTH, dayOfMonth );
 
-      timePicker = new TimePickerDialog( MedicineAlarm.this, time, hours, minutes, false );
       timePicker.show();  // Launches the TimePicker right after the DatePicker closes
     }
   };
 
-  TimePickerDialog.OnTimeSetListener time = new TimePickerDialog.OnTimeSetListener(){
+  TimePickerDialog.OnTimeSetListener time = new TimePickerDialog.OnTimeSetListener() {
     @Override
-    public  void onTimeSet( TimePicker view, int hour, int minute ) {
-      Alarm am = (Alarm)view.getTag();
+    public void onTimeSet( TimePicker view, int hour, int minute ) {
+      Alarm am = (Alarm)currentAlarm;
       am.cal.set( Calendar.HOUR, hour );
       am.cal.set( Calendar.MINUTE, minute );
       am.updateDateTime();
@@ -155,14 +155,17 @@ public class MedicineAlarm extends BaseActivity {
 
   public void dateOnClick( View view ) {
     Alarm am = (Alarm)view.getTag();
+    currentAlarm = am;
+    timePicker = new TimePickerDialog( MedicineAlarm.this, time,
+          am.cal.get( Calendar.HOUR ),
+          am.cal.get( Calendar.MINUTE ), false );
     new DatePickerDialog( MedicineAlarm.this, date,
         am.cal.get( Calendar.YEAR ),
         am.cal.get( Calendar.MONTH ),
         am.cal.get( Calendar.DAY_OF_MONTH ) ).show();
-
   }
 
-  private void createNotification( String notes ){
+  private void createNotification( String notes ) {
     // prepare intent which is triggered if the notification is selected
     Intent intent = new Intent( this, MedicineAlarm.class );
     PendingIntent pIntent = PendingIntent.getActivity( this, 0, intent, 0 );
@@ -176,13 +179,13 @@ public class MedicineAlarm extends BaseActivity {
         .addAction( R.drawable.ic_launcher, "More", pIntent )
         .build();
     NotificationManager notificationManager =
-        (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-    notificationManager.notify(0, n);
+        (NotificationManager)getSystemService( NOTIFICATION_SERVICE );
+    notificationManager.notify( 0, n );
   }
 
   @Override
-  protected void onDestroy(){
-    am.cancel(pi);
+  protected void onDestroy() {
+    am.cancel( pi );
     unregisterReceiver( br );
     super.onDestroy();
   }
