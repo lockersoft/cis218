@@ -131,8 +131,8 @@ public class MedicineAlarm extends BaseActivity {
     Alarm am = (Alarm)view.getTag();
     currentAlarm = am;
     timePicker = new TimePickerDialog( MedicineAlarm.this, time,
-          am.cal.get( Calendar.HOUR ),
-          am.cal.get( Calendar.MINUTE ), false );
+        am.cal.get( Calendar.HOUR ),
+        am.cal.get( Calendar.MINUTE ), false );
     new DatePickerDialog( MedicineAlarm.this, date,
         am.cal.get( Calendar.YEAR ),
         am.cal.get( Calendar.MONTH ),

@@ -20,43 +20,43 @@ public class BaseActivity extends Activity {
   public String FILENAME = "";
 
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    FILENAME = getString(R.string.weightFileName);
+  protected void onCreate( Bundle savedInstanceState ) {
+    super.onCreate( savedInstanceState );
+    FILENAME = getString( R.string.weightFileName );
   }
 
   @Override
-  public boolean onCreateOptionsMenu( Menu menu){
-    getMenuInflater().inflate(R.menu.mastermenu, menu);
+  public boolean onCreateOptionsMenu( Menu menu ) {
+    getMenuInflater().inflate( R.menu.mastermenu, menu );
     return true;
   }
 
   @Override
-  public boolean onOptionsItemSelected( MenuItem item ){
-    switch ( item.getItemId() ){
+  public boolean onOptionsItemSelected( MenuItem item ) {
+    switch( item.getItemId() ) {
 
-      case R.id.switchToBMI :
-        startActivity( new Intent(this, MyActivity.class));
+      case R.id.switchToBMI:
+        startActivity( new Intent( this, MyActivity.class ) );
         break;
-      case R.id.switchToLog :
+      case R.id.switchToLog:
         switchToLogger( null );
         break;
-      case R.id.switchToAlarm :
-        startActivity( new Intent(this, MedicineAlarm.class));
+      case R.id.switchToAlarm:
+        startActivity( new Intent( this, MedicineAlarm.class ) );
       default:
         return super.onOptionsItemSelected( item );
     }
     return true;
   }
 
-  public void switchToLogger( View v){
+  public void switchToLogger( View v ) {
     Intent weightLogger = new Intent( this, WeightLogger.class );
-    weightLogger.putExtra("weight", MyActivity.weightIn.getText().toString());
-    weightLogger.putExtra("height", MyActivity.heightIn.getText().toString());
+    weightLogger.putExtra( "weight", MyActivity.weightIn.getText().toString() );
+    weightLogger.putExtra( "height", MyActivity.heightIn.getText().toString() );
     startActivity( weightLogger );
   }
 
-  public void toastIt( String msg ){
-    Toast.makeText( getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
+  public void toastIt( String msg ) {
+    Toast.makeText( getApplicationContext(), msg, Toast.LENGTH_SHORT ).show();
   }
 }

@@ -31,7 +31,7 @@ public class Alarm {
                 EditText dateText,
                 ToggleButton tb,
                 Integer alarmID,
-                Calendar cal ){
+                Calendar cal ) {
     this.alarmID = alarmID;
     this.context = context;
     this.notesText = notesText;
@@ -39,29 +39,29 @@ public class Alarm {
     this.tb = tb;
     this.cal = cal;
 
-    this.alarmIntent = new Intent( "com.example.FirstAndroid");
-    alarmIntent.putExtra("notes", this.notesText.getText().toString() );
+    this.alarmIntent = new Intent( "com.example.FirstAndroid" );
+    alarmIntent.putExtra( "notes", this.notesText.getText().toString() );
     this.pi = PendingIntent.getBroadcast( context, this.alarmID,
         this.alarmIntent, PendingIntent.FLAG_CANCEL_CURRENT );
     updateDateTime();
   }
 
   // Used to get the various edit fields and buttons associated with this alarm.
-  public void setTags(){
+  public void setTags() {
     notesText.setTag( this );
     dateText.setTag( this );
     tb.setTag( this );
   }
 
-  public void setNotes( String notes ){
+  public void setNotes( String notes ) {
     notesText.setText( notes );
-    alarmIntent.putExtra("notes", notesText.getText().toString());
+    alarmIntent.putExtra( "notes", notesText.getText().toString() );
   }
 
   public void updateDateTime() {
     String myFormat = "MM-dd-yy hh:mm a";
     SimpleDateFormat sdf = new SimpleDateFormat( myFormat, Locale.US );
-    dateText.setText(sdf.format( cal.getTime()));
+    dateText.setText( sdf.format( cal.getTime() ) );
   }
 
 }

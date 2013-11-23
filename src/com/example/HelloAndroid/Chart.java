@@ -32,7 +32,9 @@ import java.util.Scanner;
  */
 public class Chart extends BaseActivity {
 
-  private enum ChartStyle { BARCHART, LINECHART };
+  private enum ChartStyle {BARCHART, LINECHART}
+
+  ;
   ChartStyle selectedChartStyle = ChartStyle.BARCHART;
 
   ArrayList<Integer> weightList = new ArrayList<Integer>();
@@ -45,28 +47,28 @@ public class Chart extends BaseActivity {
   private XYSeriesRenderer mCurrentRenderer;
 
   @Override
-  protected void onCreate( Bundle savedInstanceState ){
+  protected void onCreate( Bundle savedInstanceState ) {
     super.onCreate( savedInstanceState );
     readWeightLog();
-    setContentView(R.layout.chart);
+    setContentView( R.layout.chart );
   }
 
   @Override
-  public boolean onCreateOptionsMenu( Menu menu ){
+  public boolean onCreateOptionsMenu( Menu menu ) {
     super.onCreateOptionsMenu( menu );
-    getMenuInflater().inflate(R.menu.chart, menu);
+    getMenuInflater().inflate( R.menu.chart, menu );
     return true;
   }
 
   @Override
-  public boolean onOptionsItemSelected( MenuItem item ){
-    switch ( item.getItemId() ){
-      case R.id.barChart :
-         // Draw the barchart
+  public boolean onOptionsItemSelected( MenuItem item ) {
+    switch( item.getItemId() ) {
+      case R.id.barChart:
+        // Draw the barchart
         selectedChartStyle = ChartStyle.BARCHART;
         drawChart();
         break;
-      case R.id.lineChart :
+      case R.id.lineChart:
         // Draw the linechart
         selectedChartStyle = ChartStyle.LINECHART;
         drawChart();
@@ -77,23 +79,24 @@ public class Chart extends BaseActivity {
     return true;
   }
 
-  private void drawChart(){
-    LinearLayout layout = (LinearLayout) findViewById( R.id.chart );
+  private void drawChart() {
+    LinearLayout layout = (LinearLayout)findViewById( R.id.chart );
     layout.removeView( mChart );
-    switch( selectedChartStyle ){
+    switch( selectedChartStyle ) {
       case BARCHART:
         mChart = ChartFactory.getBarChartView( this, mDataset, mRenderer, BarChart.Type.DEFAULT );
         break;
       case LINECHART:
-        mChart = ChartFactory.getTimeChartView(this, mDataset, mRenderer, "MM/dd/yyyy");
+        mChart = ChartFactory.getTimeChartView( this, mDataset, mRenderer, "MM/dd/yyyy" );
         break;
-      default: break;
+      default:
+        break;
     }
     layout.addView( mChart );
   }
 
-  private void initChart(){
-    mCurrentSeries = new TimeSeries( "Weight Log");
+  private void initChart() {
+    mCurrentSeries = new TimeSeries( "Weight Log" );
     mDataset.addSeries( mCurrentSeries );
     mCurrentRenderer = new XYSeriesRenderer();
     mRenderer.addSeriesRenderer( mCurrentRenderer );
@@ -103,16 +106,16 @@ public class Chart extends BaseActivity {
     mRenderer.setChartTitleTextSize( 48 );
   }
 
-  private void addWeightData(){
-    for( int i=0;i<weightList.size();i++ ){
-      mCurrentSeries.add( dateList.get(i).getTime(), weightList.get(i) );
+  private void addWeightData() {
+    for( int i = 0; i < weightList.size(); i++ ) {
+      mCurrentSeries.add( dateList.get( i ).getTime(), weightList.get( i ) );
     }
   }
 
   @Override
   protected void onResume() {
     super.onResume();
-    if( mChart == null ){
+    if( mChart == null ) {
       addWeightData();
       initChart();
       drawChart();
@@ -122,36 +125,37 @@ public class Chart extends BaseActivity {
     }
   }
 
-  private void readWeightLog(){
+  private void readWeightLog() {
     FileInputStream inputStream = null;
     String temp;
     String a[];
 
     try {
       inputStream = openFileInput( FILENAME );
-      byte[] reader = new byte[ inputStream.available() ];
-      while( inputStream.read( reader ) != -1 ){}
+      byte[] reader = new byte[inputStream.available()];
+      while( inputStream.read( reader ) != -1 ) {
+      }
 
       // reader array now holds the entire file
-      Scanner s = new Scanner( new String(reader) );
-      s.useDelimiter("\\n");
-      while( s.hasNext() ){
+      Scanner s = new Scanner( new String( reader ) );
+      s.useDelimiter( "\\n" );
+      while( s.hasNext() ) {
         temp = s.next();
-        a = temp.split(",");
-        weightList.add(Integer.parseInt(a[2]));
+        a = temp.split( "," );
+        weightList.add( Integer.parseInt( a[2] ) );
         String dateTime = a[0] + " " + a[1];  // 10/30/2013	7:31 AM
-        dateList.add( new SimpleDateFormat("MM/dd/yyyy hh:mm a").parse( dateTime ) );
+        dateList.add( new SimpleDateFormat( "MM/dd/yyyy hh:mm a" ).parse( dateTime ) );
       }
       s.close();
 
-    } catch (Exception e ){
-      Log.e("Chart", e.getMessage());
+    } catch( Exception e ) {
+      Log.e( "Chart", e.getMessage() );
     } finally {
       if( inputStream != null ) {
         try {
           inputStream.close();
-        } catch( IOException e){
-          Log.e( "Chart", e.getMessage());
+        } catch( IOException e ) {
+          Log.e( "Chart", e.getMessage() );
         }
       }
     }
