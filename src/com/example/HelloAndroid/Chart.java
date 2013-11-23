@@ -32,9 +32,7 @@ import java.util.Scanner;
  */
 public class Chart extends BaseActivity {
 
-  private enum ChartStyle {BARCHART, LINECHART}
-
-  ;
+  private enum ChartStyle {BARCHART, LINECHART};
   ChartStyle selectedChartStyle = ChartStyle.BARCHART;
 
   ArrayList<Integer> weightList = new ArrayList<Integer>();
@@ -51,6 +49,7 @@ public class Chart extends BaseActivity {
     super.onCreate( savedInstanceState );
     readWeightLog();
     setContentView( R.layout.chart );
+    initChart();
   }
 
   @Override
@@ -144,7 +143,7 @@ public class Chart extends BaseActivity {
         a = temp.split( "," );
         weightList.add( Integer.parseInt( a[2] ) );
         String dateTime = a[0] + " " + a[1];  // 10/30/2013	7:31 AM
-        dateList.add( new SimpleDateFormat( "MM/dd/yyyy hh:mm a" ).parse( dateTime ) );
+        dateList.add( new SimpleDateFormat( getString( R.string.logDateFormat) ).parse( dateTime ) );
       }
       s.close();
 
