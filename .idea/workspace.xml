@@ -29,13 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAndroid.iws" />
@@ -48,7 +44,7 @@
     <file path="/a.dummy" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1384356678412" ignored="false" />
     <file path="/strings.xml" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1384876998425" ignored="false" />
     <file path="/WeightLogger.java" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1384356712640" ignored="false" />
-    <file path="/Dummy.txt" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1385181585905" ignored="false" />
+    <file path="/Dummy.txt" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1385181693141" ignored="false" />
     <file path="/WeightChart.java" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1384356705437" ignored="false" />
     <file path="/weight.xml" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1382971581710" ignored="false" />
     <file path="/Chart.java" changelist="75d279e9-5675-48e4-b600-738ec24f1918" time="1383754426656" ignored="false" />
@@ -166,7 +162,44 @@
     <favorites_list name="HelloAndroid" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MedicineAlarm.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="164" column="0" selection-start="5750" selection-end="5750" vertical-scroll-proportion="1.1819464">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MedicineAlarm#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BMI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chart.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="18" selection-start="3481" selection-end="3481" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1134#1143#0" expanded="true" />
+                <element signature="e#1189#1195#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -184,7 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/menu/menu.xml" />
         <option value="$PROJECT_DIR$/res/menu/chart.xml" />
         <option value="$PROJECT_DIR$/res/layout/chart.xml" />
         <option value="$PROJECT_DIR$/res/layout/weight.xml" />
@@ -195,11 +227,12 @@
         <option value="$PROJECT_DIR$/res/menu/mastermenu.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java" />
-        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java" />
       </list>
     </option>
   </component>
@@ -545,7 +578,7 @@
     </configuration>
     <configuration default="false" name="HelloAndroid" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="HelloAndroid" />
-      <option name="ACTIVITY_CLASS" value="com.example.HelloAndroid.MyActivity" />
+      <option name="ACTIVITY_CLASS" value="com.example.HelloAndroid.BMI" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
@@ -624,7 +657,11 @@
       <created>1385181595415</created>
       <updated>1385181595415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reformatting">
+      <created>1385181704203</created>
+      <updated>1385181704203</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -651,10 +688,10 @@
     <frame x="107" y="46" width="1716" height="1146" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2816764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2816764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40309155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40253413" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2782402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -671,9 +708,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17005987" sideWeight="0.7183236" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17005987" sideWeight="0.7183236" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1920078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28752437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23987034" sideWeight="0.7217598" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -725,7 +762,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatting" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -741,6 +778,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Refactoring" />
+    <MESSAGE value="Reformatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -811,30 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="29" selection-start="2661" selection-end="2661" vertical-scroll-proportion="0.23272215">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1467#1637#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
-            <element signature="e#1680#1850#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="18" selection-start="3481" selection-end="3481" vertical-scroll-proportion="0.9576869">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1134#1143#0" expanded="true" />
-            <element signature="e#1189#1195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="401" selection-end="401" vertical-scroll-proportion="0.23272215">
@@ -846,18 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="80" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.7038082">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.17489421">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MedicineAlarm#0" expanded="false" />
-            <element signature="e#4092#4378#0" expanded="true" />
-            <element signature="e#4373#4374#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,6 +878,36 @@
     <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/alarm.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="18" selection-start="3481" selection-end="3481" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1134#1143#0" expanded="true" />
+            <element signature="e#1189#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="0" selection-start="5750" selection-end="5750" vertical-scroll-proportion="1.1819464">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MedicineAlarm#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

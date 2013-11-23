@@ -10,7 +10,7 @@ import android.widget.*;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 
-public class MyActivity extends BaseActivity {
+public class BMI extends BaseActivity {
 
   public static EditText heightIn;
   public static EditText weightIn;
@@ -70,10 +70,10 @@ public class MyActivity extends BaseActivity {
   }
 
   public void radioButtonClicked( View v ) {
-    //   Log.i( "MyActivity", "Radio Button Clicked");
+    //   Log.i( "BMI", "Radio Button Clicked");
     int selectedId = weightLocationGroup.getCheckedRadioButtonId();
     RadioButton selected = (RadioButton)findViewById( selectedId );
-//    Log.i( "MyActivity", selected.getText().toString() );
+//    Log.i( "BMI", selected.getText().toString() );
     toastIt( selected.getText().toString() );
 
     american = rdoAmerican.isChecked();  // Main code
@@ -89,7 +89,7 @@ public class MyActivity extends BaseActivity {
       weight = formatter.parse( weightIn.getText().toString() ).doubleValue();
       height = formatter.parse( heightIn.getText().toString() ).doubleValue();
     } catch( ParseException ex ) {
-      Log.d( "MyActivity", "Cannot Parse Number: " +
+      Log.d( "BMI", "Cannot Parse Number: " +
           weightIn.getText().toString() +
           " or " +
           heightIn.getText().toString()
@@ -101,7 +101,7 @@ public class MyActivity extends BaseActivity {
 
     double bmi = ( weight / ( height * height ) ) * 703.0;
     String result = String.format( "%.2f", bmi );
-    Log.d( "MyActivity", result );
+    Log.d( "BMI", result );
     bmiOut.setText( result, TextView.BufferType.NORMAL );
 
     // < 16  seriously underweight

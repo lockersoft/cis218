@@ -36,7 +36,7 @@ public class BaseActivity extends Activity {
     switch( item.getItemId() ) {
 
       case R.id.switchToBMI:
-        startActivity( new Intent( this, MyActivity.class ) );
+        startActivity( new Intent( this, BMI.class ) );
         break;
       case R.id.switchToLog:
         switchToLogger( null );
@@ -51,8 +51,8 @@ public class BaseActivity extends Activity {
 
   public void switchToLogger( View v ) {
     Intent weightLogger = new Intent( this, WeightLogger.class );
-    weightLogger.putExtra( "weight", MyActivity.weightIn.getText().toString() );
-    weightLogger.putExtra( "height", MyActivity.heightIn.getText().toString() );
+    weightLogger.putExtra( "weight", BMI.weightIn.getText().toString() );
+    weightLogger.putExtra( "height", BMI.heightIn.getText().toString() );
     startActivity( weightLogger );
   }
 
