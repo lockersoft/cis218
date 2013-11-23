@@ -9,4 +9,5 @@
     <string name="seriously_overweight">Seriously Overweight</string>
     <string name="gravely_overweight">Gravely overweight</string><string name="turnOn">Turn On</string><string name="turnOff">Turn Off</string>
     <string name="weightLog">Weight Logger</string>
+    <string name="logDateFormat">MM/dd/yyyy hh:mm a</string>
 </resources>
