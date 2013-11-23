@@ -73,27 +73,16 @@ public class MedicineAlarm extends BaseActivity {
     // Register the receiver and create the intents for passing information
     registerReceiver( br, new IntentFilter( "com.example.FirstAndroid" ) );
 
-    //   setCurrentDateOnView();
-
     // Create all of my Alarm Objects
-//    for(int i=0;i<2;i++){
-//      alarms[i] = new Alarm( this, "", i  );
-//    }
     // TODO: Set date for each calendar from file
     alarms[0] = new Alarm( this, editNotes1, dateText1, toggleButton1, 0, Calendar.getInstance() );
-    editNotes1.setTag( alarms[0] );
-    dateText1.setTag( alarms[0] );
-    toggleButton1.setTag( alarms[0] );
+    alarms[0].setTags();
 
     alarms[1] = new Alarm( this, editNotes2, dateText2, toggleButton2, 1, Calendar.getInstance() );
-    editNotes2.setTag( alarms[1] );
-    dateText2.setTag( alarms[1] );
-    toggleButton2.setTag( alarms[1] );
+    alarms[1].setTags();
   }
 
   public void toggleAlarm( View v ) {
-//    String notesText =  ((EditText)v.getTag()).getText().toString();
-
     if( v.getId() == toggleButton1.getId() ) {
       if( toggleButton1.isChecked() ) {
         alarms[0].setNotes( editNotes1.getText().toString() );
@@ -119,12 +108,6 @@ public class MedicineAlarm extends BaseActivity {
     @Override
     public void onDateSet( DatePicker view, int year, int monthOfYear, int dayOfMonth ) {
       Alarm am = (Alarm)currentAlarm;
-      int month, day, hours, minutes;
-      year = am.cal.get( Calendar.YEAR );
-      month = am.cal.get( Calendar.MONTH );
-      day = am.cal.get( Calendar.DAY_OF_MONTH );
-      hours = am.cal.get( Calendar.HOUR );
-      minutes = am.cal.get( Calendar.MINUTE );
 
       am.cal.set( Calendar.YEAR, year );
       am.cal.set( Calendar.MONTH, monthOfYear );
@@ -143,15 +126,6 @@ public class MedicineAlarm extends BaseActivity {
       am.updateDateTime();
     }
   };
-
-  public void setCurrentDateOnView() {
-    int month, day, year, hours, minutes;
-    year = c.get( Calendar.YEAR );
-    month = c.get( Calendar.MONTH );
-    day = c.get( Calendar.DAY_OF_MONTH );
-    hours = c.get( Calendar.HOUR );
-    minutes = c.get( Calendar.MINUTE );
-  }
 
   public void dateOnClick( View view ) {
     Alarm am = (Alarm)view.getTag();

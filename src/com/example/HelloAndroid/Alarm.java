@@ -46,6 +46,13 @@ public class Alarm {
     updateDateTime();
   }
 
+  // Used to get the various edit fields and buttons associated with this alarm.
+  public void setTags(){
+    notesText.setTag( this );
+    dateText.setTag( this );
+    tb.setTag( this );
+  }
+
   public void setNotes( String notes ){
     notesText.setText( notes );
     alarmIntent.putExtra("notes", notesText.getText().toString());
