@@ -4,8 +4,8 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="16"/>
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
-            android:theme="@android:style/Theme.Holo.Light">
+    <application android:label="@string/app_name" android:icon="@drawable/blood_drop"
+                 android:theme="@android:style/Theme.Holo.Light">
         <activity android:name=".BMI"
                   android:label="@string/app_name">
             <intent-filter>

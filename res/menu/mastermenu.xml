@@ -6,23 +6,23 @@
             android:orderInCategory="100"
             android:showAsAction="always"
             android:icon="@drawable/calculator"
-            android:title="BMI Calculator" />
+            android:title="BMI Calculator"/>
     <item
             android:id="@+id/switchToLog"
             android:orderInCategory="200"
             android:showAsAction="always"
             android:icon="@drawable/list"
-            android:title="@string/weightLog" />
+            android:title="@string/weightLog"/>
     <item
             android:id="@+id/switchToAlarm"
             android:orderInCategory="300"
             android:showAsAction="always"
             android:icon="@drawable/alarm"
-            android:title="Medicine Alarm" />
+            android:title="Medicine Alarm"/>
     <item
             android:id="@+id/switchToChart"
             android:orderInCategory="300"
             android:showAsAction="always"
             android:icon="@drawable/chart"
-            android:title="Weight Chart" />
+            android:title="Weight Chart"/>
 </menu>
