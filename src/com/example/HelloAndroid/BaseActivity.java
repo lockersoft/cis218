@@ -43,6 +43,10 @@ public class BaseActivity extends Activity {
         break;
       case R.id.switchToAlarm:
         startActivity( new Intent( this, MedicineAlarm.class ) );
+        break;
+      case R.id.switchToChart:
+        startActivity( new Intent( this, Chart.class ) );
+        break;
       default:
         return super.onOptionsItemSelected( item );
     }
