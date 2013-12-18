@@ -1,6 +1,5 @@
 package com.example.HelloAndroid;
 
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
@@ -13,7 +12,6 @@ import android.widget.*;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -123,7 +121,7 @@ public class WeightLogger extends BaseActivity {
     try {
       String email = "dave@lockersoft.com";
       String subject = "Dave Jones Weight Log";
-      String message = "Dr. Heavy,  Here is my latest weight log for you to peruse";
+      String message = "Dr. Heavy,\nHere is my latest weight log for you to peruse.\n\nDave";
 
       copyFileToExternal( FILENAME );
       File file = new File( Environment.getExternalStorageDirectory() + EXT_FOLDERNAME + FILENAME);

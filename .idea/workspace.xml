@@ -33,12 +33,8 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/example/HelloAndroid/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/example/HelloAndroid/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloAndroid.iml" afterPath="$PROJECT_DIR$/HelloAndroid.iml" />
+    <list default="true" id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/weight.xml" afterPath="$PROJECT_DIR$/res/layout/weight.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAndroid.iws" />
@@ -183,11 +179,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeightLogger.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WeightLogger.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="0" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3289">
-              <folding />
+            <state line="153" column="33" selection-start="5041" selection-end="5041" vertical-scroll-proportion="1.0921986" vertical-offset="2611" max-vertical-offset="3611">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,10 +211,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="18" selection-start="2341" selection-end="2341" vertical-scroll-proportion="1.1503546" vertical-offset="869" max-vertical-offset="2208">
+            <state line="73" column="7" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="2208">
               <folding>
                 <element signature="e#758#794#0" expanded="true" />
               </folding>
@@ -832,7 +830,7 @@
       <changelist id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="" />
       <created>1380812351935</created>
       <updated>1380812351935</updated>
-      <workItem from="1387321849756" duration="8560000" />
+      <workItem from="1387321849756" duration="8800000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1385149620202</created>
@@ -874,11 +872,15 @@
       <created>1385188690965</created>
       <updated>1385188690965</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added ability to email someone (Doctor) with the weight log .csv file as an attachment">
+      <created>1387353372795</created>
+      <updated>1387353372795</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8560000" />
+    <option name="totallyTimeSpent" value="8800000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -918,7 +920,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.9750297" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38168848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38132295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32101166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.80737215" order="1" side_tool="false" content_ui="tabs" />
@@ -956,7 +958,9 @@
     <MESSAGE value="Renamed MyActivity" />
     <MESSAGE value="Fixed Chart activity" />
     <MESSAGE value="added top level menu icons, fixed chart button in actionbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added top level menu icons, fixed chart button in actionbar" />
+    <MESSAGE value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment" />
+    <MESSAGE value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1004,7 +1008,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="27" selection-start="1637" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1905">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,13 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="4744" selection-end="4744" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_alarm.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1151,9 +1150,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="18" selection-start="2341" selection-end="2341" vertical-scroll-proportion="1.1503546" vertical-offset="869" max-vertical-offset="2208">
+        <state line="73" column="7" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="2208">
           <folding>
             <element signature="e#758#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="33" selection-start="5041" selection-end="5041" vertical-scroll-proportion="1.0921986" vertical-offset="2611" max-vertical-offset="3611">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
