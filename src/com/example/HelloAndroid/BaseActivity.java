@@ -3,10 +3,15 @@ package com.example.HelloAndroid;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,6 +23,7 @@ import android.widget.Toast;
 public class BaseActivity extends Activity {
 
   public String FILENAME = "";
+  public String EXT_FOLDERNAME = "/HealthApp/";
 
   @Override
   protected void onCreate( Bundle savedInstanceState ) {
@@ -59,6 +65,31 @@ public class BaseActivity extends Activity {
     weightLogger.putExtra( "height", BMI.heightIn.getText().toString() );
     startActivity( weightLogger );
   }
+
+  public  File copyFileToExternal(String fileName) {
+    File file = null;
+    String newPath = Environment.getExternalStorageDirectory() + EXT_FOLDERNAME;
+    try {
+      File f = new File(newPath);
+      f.mkdirs();
+      FileInputStream fin = openFileInput(fileName);
+      FileOutputStream fos = new FileOutputStream(newPath + fileName);
+      byte[] buffer = new byte[1024];
+      int len1 = 0;
+      while ((len1 = fin.read(buffer)) != -1) {
+        fos.write(buffer, 0, len1);
+      }
+      fin.close();
+      fos.close();
+      file = new File(newPath + fileName);
+      if (file.exists())
+        return file;
+    } catch (Exception e) {
+      toastIt( "HELP!" );
+    }
+    return null;
+  }
+
 
   public void toastIt( String msg ) {
     Toast.makeText( getApplicationContext(), msg, Toast.LENGTH_SHORT ).show();

@@ -79,5 +79,18 @@
                     android:text="Weight Chart"
                     android:id="@+id/btnChart" android:layout_column="4" android:onClick="switchToChart"/>
         </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Doctor"
+                    android:id="@+id/emailDr" android:layout_column="4" android:onClick="emailDrOnClick"/>
+        </TableRow>
     </TableLayout>
 </ScrollView>

@@ -5,12 +5,15 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.*;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -114,6 +117,41 @@ public class WeightLogger extends BaseActivity {
     SimpleDateFormat stf = new SimpleDateFormat( timeFormat, Locale.US );
     edtTime.setText( stf.format( c.getTime() ) );
   }
+
+  public void emailDrOnClick( View v ){
+    // Email the log to the Dr.
+    try {
+      String email = "dave@lockersoft.com";
+      String subject = "Dave Jones Weight Log";
+      String message = "Dr. Heavy,  Here is my latest weight log for you to peruse";
+
+      copyFileToExternal( FILENAME );
+      File file = new File( Environment.getExternalStorageDirectory() + EXT_FOLDERNAME + FILENAME);
+      Uri path = Uri.fromFile(file);
+
+      final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+      emailIntent.setType( "plain/text" );
+      emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
+      new String[] { email });
+      emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
+      emailIntent.putExtra(Intent.EXTRA_STREAM, path);
+
+      emailIntent.putExtra( android.content.Intent.EXTRA_TEXT, message );
+      startActivityForResult(Intent.createChooser(emailIntent, "Send mail..."), 4242);
+
+    } catch (Throwable t) {
+      toastIt( "Request failed try again: " + t.toString() );
+    }
+  }
+
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == 4242) {
+      File file = new File(Environment.getExternalStorageDirectory() + EXT_FOLDERNAME + FILENAME);
+      file.delete();
+    }
+  }
+
 
   public void switchToCalc( View v ) {
     finish();
