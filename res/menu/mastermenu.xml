@@ -29,7 +29,7 @@
             android:id="@+id/switchToPreferences"
             android:orderInCategory="300"
             android:showAsAction="always"
-            android:icon="@drawable/chart"
+            android:icon="@drawable/preferences"
             android:title="Preferences"/>
     <item
             android:id="@+id/switchToMap"
