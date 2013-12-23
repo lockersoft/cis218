@@ -21,5 +21,9 @@
         </activity>
         <activity android:name=".MedicineAlarm">
         </activity>
+        <activity android:name=".Preferences">
+        </activity>
+        <activity android:name=".Map">
+        </activity>
     </application>
 </manifest>

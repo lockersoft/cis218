@@ -25,4 +25,16 @@
             android:showAsAction="always"
             android:icon="@drawable/chart"
             android:title="Weight Chart"/>
+    <item
+            android:id="@+id/switchToPreferences"
+            android:orderInCategory="300"
+            android:showAsAction="always"
+            android:icon="@drawable/chart"
+            android:title="Preferences"/>
+    <item
+            android:id="@+id/switchToMap"
+            android:orderInCategory="300"
+            android:showAsAction="always"
+            android:icon="@drawable/chart"
+            android:title="Map"/>
 </menu>
