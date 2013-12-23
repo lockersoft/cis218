@@ -10,4 +10,11 @@
     <string name="gravely_overweight">Gravely overweight</string><string name="turnOn">Turn On</string><string name="turnOff">Turn Off</string>
     <string name="weightLog">Weight Logger</string>
     <string name="logDateFormat">MM/dd/yyyy hh:mm a</string>
+
+    <string-array name="buildings">
+        <item>Building 1</item>
+        <item>Building 50</item>
+        <item>Building 15</item>
+    </string-array>
+
 </resources>

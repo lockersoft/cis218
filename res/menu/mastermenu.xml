@@ -35,6 +35,6 @@
             android:id="@+id/switchToMap"
             android:orderInCategory="300"
             android:showAsAction="always"
-            android:icon="@drawable/chart"
+            android:icon="@drawable/map_icon"
             android:title="Map"/>
 </menu>

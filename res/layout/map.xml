@@ -9,7 +9,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/spinner" android:layout_gravity="center_horizontal" android:layout_weight="1"
             android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
-            />
+            android:entries="@array/buildings" android:clickable="true"/>
     <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
