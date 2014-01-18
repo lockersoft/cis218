@@ -15,11 +15,6 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="2.7in QVGA" />
-        <option name="dockMode" value="" />
-        <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-16" />
-        <option name="theme" value="Theme" />
         <option name="visible" value="false" />
       </GlobalState>
     </option>
@@ -30,11 +25,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MAP" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" />
+    <list default="true" id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/HelloAndroid/MapTile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAndroid.iws" />
@@ -161,28 +157,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465">
+            <state line="82" column="25" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1419" max-vertical-offset="2200">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/chart.xml">
+      <file leaf-file-name="MapTile.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MapTile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
+            <state line="10" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.37131882" vertical-offset="0" max-vertical-offset="781">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeightLogger.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Preferences.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Preferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="22" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preferences.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/preferences.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="23" column="56" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeightChart.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1830">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeightLogger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="33" selection-start="5041" selection-end="5041" vertical-scroll-proportion="1.0921986" vertical-offset="2611" max-vertical-offset="3611">
+            <state line="123" column="28" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.0" vertical-offset="3475" max-vertical-offset="4396">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,34 +216,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weight.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/weight.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+      <file leaf-file-name="mastermenu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/menu/mastermenu.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="47" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/map.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alarm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="80" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <provider editor-type-id="text-editor">
+            <state line="3" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="7" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="2208">
-              <folding>
-                <element signature="e#758#794#0" expanded="true" />
-              </folding>
+            <state line="20" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weight.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/weight.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,7 +277,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/res/layout/chart.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/values-es/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/alarmsettings.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java" />
@@ -250,20 +285,25 @@
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/Chart.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/menu/mastermenu.xml" />
         <option value="$PROJECT_DIR$/res/menu/chart.xml" />
         <option value="$PROJECT_DIR$/res/layout/weight.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java" />
+        <option value="$PROJECT_DIR$/res/layout/preferences.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/assets/sccmap.html" />
+        <option value="$PROJECT_DIR$/res/layout/map.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/Map.java" />
+        <option value="$PROJECT_DIR$/res/menu/mastermenu.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/Preferences.java" />
+        <option value="$PROJECT_DIR$/src/com/example/HelloAndroid/MapTile.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="22" />
-    <option name="width" value="1716" />
-    <option name="height" value="1146" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -279,7 +319,13 @@
             <id>ActionScript specificJavaScript</id>
           </State>
           <State>
+            <id>Android</id>
+          </State>
+          <State>
             <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Assignment issues</id>
           </State>
           <State>
             <id>Class structure</id>
@@ -321,16 +367,10 @@
             <id>Google Web Toolkit issues</id>
           </State>
           <State>
-            <id>Groovy</id>
-          </State>
-          <State>
             <id>Internationalization issues</id>
           </State>
           <State>
             <id>J2ME issues</id>
-          </State>
-          <State>
-            <id>JBoss Seam issues</id>
           </State>
           <State>
             <id>JavaScript</id>
@@ -339,16 +379,10 @@
             <id>Method metrics</id>
           </State>
           <State>
-            <id>Naming ConventionsGroovy</id>
-          </State>
-          <State>
             <id>Naming conventions</id>
           </State>
           <State>
             <id>Naming conventionsJavaScript</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsGroovy</id>
           </State>
           <State>
             <id>Threading issues</id>
@@ -362,7 +396,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Abstraction issues</id>
+            <id>SASS/SCSS</id>
           </State>
         </selected-state>
       </profile-state>
@@ -377,7 +411,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -396,7 +430,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,49 +494,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cis218" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cis218" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cis218" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cis218" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,7 +538,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -525,7 +551,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="DavesWishDroid" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -533,6 +559,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="H:\hello\HelloAndroid\res" />
       <recent name="H:\hello\HelloAndroid\res\values-es" />
     </key>
@@ -763,7 +790,7 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -830,7 +857,11 @@
       <changelist id="75d279e9-5675-48e4-b600-738ec24f1918" name="Default" comment="" />
       <created>1380812351935</created>
       <updated>1380812351935</updated>
-      <workItem from="1387321849756" duration="8800000" />
+      <workItem from="1387321849756" duration="35631000" />
+      <workItem from="1389052285119" duration="2270000" />
+      <workItem from="1389062113293" duration="48000" />
+      <workItem from="1389062243395" duration="10917000" />
+      <workItem from="1389630754375" duration="5781000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1385149620202</created>
@@ -876,11 +907,31 @@
       <created>1387353372795</created>
       <updated>1387353372795</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;">
+      <created>1387353570031</created>
+      <updated>1387353570031</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added webview to zoom a map created from HTML and image slices">
+      <created>1387762402818</created>
+      <updated>1387762402818</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added spinner to and map scrolling to scroll to a particular portion of the map">
+      <created>1387774946699</created>
+      <updated>1387774946699</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added menu map icon">
+      <created>1387774980897</created>
+      <updated>1387774980897</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added preferences icon">
+      <created>1387777176511</created>
+      <updated>1387777176511</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8800000" />
+    <option name="totallyTimeSpent" value="54647000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -903,39 +954,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="22" width="1716" height="1146" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23987034" sideWeight="0.7217598" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28696498" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26721016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31442463" sideWeight="0.7217598" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27723736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.024911031" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29280156" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.9750297" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38132295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32101166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16820809" sideWeight="0.41008174" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2859922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.80737215" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17383513" sideWeight="0.7188716" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15495208" sideWeight="0.5885559" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28696498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23662885" sideWeight="0.6706302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40253413" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23662885" sideWeight="0.6706302" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40126812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38132295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -960,7 +1011,11 @@
     <MESSAGE value="added top level menu icons, fixed chart button in actionbar" />
     <MESSAGE value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment" />
     <MESSAGE value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ability to email someone (Doctor) with the weight log .csv file as an attachment&#10;" />
+    <MESSAGE value="Added webview to zoom a map created from HTML and image slices" />
+    <MESSAGE value="Added spinner to and map scrolling to scroll to a particular portion of the map" />
+    <MESSAGE value="added menu map icon" />
+    <MESSAGE value="added preferences icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added preferences icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -970,6 +1025,125 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="41" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="34" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2445">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/mastermenu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="47" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/map.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="3" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/weight.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="7" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/mastermenu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="47" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/map.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="3" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/weight.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="7" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="0" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2580">
@@ -994,7 +1168,10 @@
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="40" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465">
-          <folding />
+          <folding>
+            <element signature="e#298#316#0" expanded="false" />
+            <element signature="e#489#507#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,9 +1194,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="19" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="990">
-          <folding>
-            <element signature="e#758#794#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,32 +1218,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="-0.94311374" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#677#686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values-es/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -1081,20 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/mastermenu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/chart.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="7" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1102,35 +1237,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="5750" selection-end="5750" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="80" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/weight.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/adt-bundle-mac-x86_64-20130917/sdk/sources/android-18/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16965" column="0" selection-start="658148" selection-end="658155" vertical-scroll-proportion="0.33286715" vertical-offset="251207" max-vertical-offset="278940">
-          <folding />
-        </state>
+        <state line="16965" column="0" selection-start="658148" selection-end="658155" vertical-scroll-proportion="0.33286715" vertical-offset="251207" max-vertical-offset="278940" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_alarm.png">
@@ -1148,21 +1267,125 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MedicineAlarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="18" selection-start="2658" selection-end="2663" vertical-scroll-proportion="-8.807693" vertical-offset="671" max-vertical-offset="2220">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="80" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding>
+            <element signature="e#298#316#0" expanded="false" />
+            <element signature="e#489#507#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="37" selection-start="2933" selection-end="2979" vertical-scroll-proportion="0.0" vertical-offset="1027" max-vertical-offset="2145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/mastermenu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="47" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/preferences.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/map_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/preferences.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="23" column="56" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="22" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="7" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="2208">
-          <folding>
-            <element signature="e#758#794#0" expanded="true" />
-          </folding>
+        <state line="101" column="15" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1860">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/WeightLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="33" selection-start="5041" selection-end="5041" vertical-scroll-proportion="1.0921986" vertical-offset="2611" max-vertical-offset="3611">
+        <state line="123" column="28" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.0" vertical-offset="3475" max-vertical-offset="4396">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sccmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="26" selection-start="105" selection-end="235" vertical-scroll-proportion="0.07926024" vertical-offset="0" max-vertical-offset="4965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/map.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="3" column="49" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="25" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="1419" max-vertical-offset="2200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/HelloAndroid/MapTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.37131882" vertical-offset="0" max-vertical-offset="781">
+          <folding />
         </state>
       </provider>
     </entry>
