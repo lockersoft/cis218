@@ -84,7 +84,7 @@ public class BaseActivity extends Activity {
         startActivity( new Intent( this, Preferences.class ) );
         break;
       case R.id.switchToMap:
-        startActivity( new Intent( this, Map.class ) );
+        startActivity( new Intent( this, MapTile.class ) );
         break;
       default:
         return super.onOptionsItemSelected( item );
