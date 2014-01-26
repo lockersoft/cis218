@@ -86,6 +86,9 @@ public class BaseActivity extends Activity {
       case R.id.switchToMap:
         startActivity( new Intent( this, MapTile.class ) );
         break;
+      case R.id.switchToGoogleMap:
+        startActivity( new Intent( this, GoogleMap.class ) );
+        break;
       default:
         return super.onOptionsItemSelected( item );
     }

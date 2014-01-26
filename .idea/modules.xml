@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloAndroid.iml" filepath="$PROJECT_DIR$/HelloAndroid.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/adt-bundle-mac-x86_64-20130917/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="$USER_HOME$/Documents/adt-bundle-mac-x86_64-20130917/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
     </modules>
   </component>
 </project>
